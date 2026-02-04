@@ -1,4 +1,4 @@
-# 🛡️ Secure AI Audit Assistant
+# RAG AI Audit Assistant
 
 > **A Secure, Graph-Based Retrieval-Augmented Generation (RAG) System with Role-Based Access Control (RBAC).**
 
@@ -25,32 +25,32 @@ Instead of just asking the AI immediately, this system performs a 3-step process
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 This project adds a layer of **Enterprise Security** on top of standard RAG:
 
-### 1. 🔐 Role-Based Access Control (RBAC)
+### 1.  Role-Based Access Control (RBAC)
 Not everyone should see every document. This system filters search results based on user roles:
 * **Junior Auditor:** Can only access "Public" documents.
 * **Manager:** Can access "Public" and "Internal" documents.
 * **Admin:** Full access to "Confidential" data.
 * *Smart Denial:* If a low-level user asks about a secret file, the AI detects the file exists but refuses to reveal the content.
 
-### 2. 🕸️ Graph Visualization
+### 2.  Graph Visualization
 * Visualizes the security architecture.
 * Shows nodes (Users) connected to permissions (Data Levels), making it easy to understand who can access what.
 
-### 3. 📜 Immutable Audit Logs
+### 3.  Immutable Audit Logs
 * Security requires accountability.
 * Every query, upload, and access attempt is logged to a secure CSV file with timestamps and status codes (ALLOWED/DENIED).
 
-### 4. 🧠 Local Privacy (Ollama)
+### 4.  Local Privacy (Ollama)
 * Uses **Llama 3** running locally on your machine via [Ollama](https://ollama.com).
 * **No data leaves your computer.** Perfect for sensitive audit/legal documents.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** [Streamlit](https://streamlit.io) (Python UI)
 * **Database:** [ChromaDB](https://www.trychroma.com) (Vector Database for RAG)
@@ -60,7 +60,7 @@ Not everyone should see every document. This system filters search results based
 
 ---
 
-## ⚡ Installation Guide
+##  Installation Guide
 
 ### Prerequisites
 1.  **Python 3.9+** installed.
