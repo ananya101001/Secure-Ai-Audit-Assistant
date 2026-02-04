@@ -70,3 +70,26 @@ Not everyone should see every document. This system filters search results based
 ```bash
 git clone [https://github.com/ananya101001/rag-ai-assistant.git](https://github.com/ananya101001/rag-ai-assistant.git)
 cd rag-ai-assistant
+```
+
+rag-ai-assistant/
+├── app.py                 # The main application runner
+├── requirements.txt       # List of Python libraries needed
+├── README.md              # This file
+│
+├── backend/               # 🧠 The Brains
+│   ├── database.py        # Handles PDF processing & Vector Search
+│   ├── llm.py             # Connects to Ollama (Llama 3)
+│   └── audit_log.py       # Writes logs to CSV
+│
+├── frontend/              # 🎨 The Beauty
+│   ├── dashboard.py       # Main chat interface & tabs
+│   ├── login.py           # Login screen
+│   ├── graph_viz.py       # Draws the RBAC graph
+│   └── styles.py          # CSS for modern UI
+│
+└── data/                  # Folder for temporary file storage
+
+
+Author
+Built by Ananya Praveen Shetty
